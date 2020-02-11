@@ -20,6 +20,10 @@ public class Cache {
         ZMQ.Socket dealer = context.socket(SocketType.DEALER);
         dealer.connect(Constants.CACHE_ROUTER_ADDRESS);
 
+        sendConnectRequest(dealer, minKey, maxKey);
+        Long nextHearbeatTime = System.currentTimeMillis() + Constants.HEARTBEAT_TIMEOUT;
+
+        
 
     }
 
