@@ -20,6 +20,10 @@ public class Cache {
         ZMQ.Socket dealer = context.socket(SocketType.DEALER);
         dealer.connect(Constants.CACHE_ROUTER_ADDRESS);
 
+
+    }
+
+    private static void sendConnectRequest (ZMQ.Socket socket, Integer minKey, Integer maxKey) {
         
     }
 }
