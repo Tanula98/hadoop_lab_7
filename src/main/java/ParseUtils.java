@@ -30,7 +30,9 @@ public class ParseUtils {
         if (Constants.NOTIFY_COMMAND_PATTERN.matcher(command).find()) {
             return CommandType.NOTIFY;
         }
-        
+        if (Constants.OK_COMMAND_PATTERN.matcher(command).find()) {
+            return CommandType.OK;
+        }
         return CommandType.INVALID;
     }
 }
