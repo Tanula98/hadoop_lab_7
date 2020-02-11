@@ -11,5 +11,7 @@ public class ParseUtils {
         OK
     }
 
-    
+    public static CommandType getCommandType(String command){
+        
+    }
 }
