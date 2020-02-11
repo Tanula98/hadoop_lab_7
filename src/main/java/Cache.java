@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Cache {
 
     public static void main(String[] args) {
@@ -5,6 +7,9 @@ public class Cache {
             System.out.println("incorrect command-line arguments");
             System.exit(-1);
         }
+
+        HashMap<Integer, Integer> cache = new HashMap<>();
+
         
     }
 }
