@@ -27,6 +27,10 @@ public class ParseUtils {
         if (Constants.CONNECT_COMMAND_PATTERN.matcher(command).find()) {
             return CommandType.CONNECT;
         }
+        if (Constants.NOTIFY_COMMAND_PATTERN.matcher(command).find()) {
+            return CommandType.NOTIFY;
+        }
+        
         return CommandType.INVALID;
     }
 }
