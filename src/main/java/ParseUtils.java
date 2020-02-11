@@ -40,5 +40,7 @@ public class ParseUtils {
         return "CONNECT " + minKey + " " + maxKey;
     }
 
-    
+    public static String buildNotifyRequest () {
+        return "NOTIFY";
+    }
 }
