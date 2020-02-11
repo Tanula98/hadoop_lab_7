@@ -1,5 +1,6 @@
 import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
+import org.zeromq.ZMsg;
 
 import java.util.HashMap;
 
@@ -24,6 +25,8 @@ public class Cache {
         Long nextHearbeatTime = System.currentTimeMillis() + Constants.HEARTBEAT_TIMEOUT;
 
         while (!Thread.currentThread().isInterrupted()) {
+            ZMsg msg = ZMsg.recvMsg(dealer, false);
+
 
         }
 
