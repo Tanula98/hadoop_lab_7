@@ -10,6 +10,9 @@ public class Cache {
 
         HashMap<Integer, Integer> cache = new HashMap<>();
 
+        Integer minKey = Integer.parseInt(args[0]);
+        Integer maxKey = Integer.parseInt(args[1]);
+
         
     }
 }
