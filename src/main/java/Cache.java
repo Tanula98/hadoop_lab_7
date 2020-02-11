@@ -23,7 +23,9 @@ public class Cache {
         sendConnectRequest(dealer, minKey, maxKey);
         Long nextHearbeatTime = System.currentTimeMillis() + Constants.HEARTBEAT_TIMEOUT;
 
-        
+        while (!Thread.currentThread().isInterrupted()) {
+            
+        }
 
     }
 
