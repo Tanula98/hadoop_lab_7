@@ -1,3 +1,6 @@
+import org.zeromq.SocketType;
+import org.zeromq.ZMQ;
+
 import java.util.HashMap;
 
 public class Cache {
@@ -13,6 +16,9 @@ public class Cache {
         Integer minKey = Integer.parseInt(args[0]);
         Integer maxKey = Integer.parseInt(args[1]);
 
-        
+        ZMQ.Context context = ZMQ.context(1);
+        ZMQ.Socket dealer = context.socket(SocketType.DEALER);
+        dealer.connect(Constants.CACHE_ROUTER_ADDRESS);
+
     }
 }
