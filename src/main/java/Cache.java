@@ -24,6 +24,6 @@ public class Cache {
     }
 
     private static void sendConnectRequest (ZMQ.Socket socket, Integer minKey, Integer maxKey) {
-        
+
     }
 }

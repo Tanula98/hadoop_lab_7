@@ -35,4 +35,10 @@ public class ParseUtils {
         }
         return CommandType.INVALID;
     }
+
+    public static String buildConnectRequest (Integer minKey, Integer maxKey) {
+        return "CONNECT " + minKey + " " + maxKey;
+    }
+
+    
 }
