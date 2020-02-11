@@ -21,6 +21,9 @@ public class ParseUtils {
         if (Constants.RUN_CACHE_PATTERN.matcher(command).find()) {
             return CommandType.RUN_CACHE;
         }
+        if (Constants.RETURN_VALUE_COMMAND_PATTERN.matcher(command).find()) {
+            return CommandType.RETURN_VALUE;
+        }
         
         return CommandType.INVALID;
     }
