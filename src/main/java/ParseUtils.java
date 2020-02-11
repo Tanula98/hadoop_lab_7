@@ -12,7 +12,7 @@ public class ParseUtils {
     }
 
     public static CommandType getCommandType(String command){
-        if (GET_COMMAND_PATTERN.matcher(command).find()) {
+        if (Constants.GET_COMMAND_PATTERN.matcher(command).find()) {
             return CommandType.GET;
         }
     }
