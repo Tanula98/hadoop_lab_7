@@ -8,6 +8,6 @@ public class Proxi {
         ZMQ.Context context = ZMQ.context(1);
         ZMQ.Socket frontend = context.socket(SocketType.ROUTER);
         ZMQ.Socket backend = context.socket(SocketType.ROUTER);
-        
+        frontend.bind
     }
 }
