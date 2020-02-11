@@ -24,6 +24,7 @@ public class Cache {
     }
 
     private static void sendConnectRequest (ZMQ.Socket socket, Integer minKey, Integer maxKey) {
-
+        System.out.println("connect req send");
+        socket.send(ParseUtils.buildConnectRequest(minKey, maxKey));
     }
 }
