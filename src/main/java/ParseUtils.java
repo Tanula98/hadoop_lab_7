@@ -15,6 +15,9 @@ public class ParseUtils {
         if (Constants.GET_COMMAND_PATTERN.matcher(command).find()) {
             return CommandType.GET;
         }
+        if (Constants.PUT_COMMAND_PATTERN.matcher(command).find()) {
+            return CommandType.PUT;
+        }
         
         return CommandType.INVALID;
     }
