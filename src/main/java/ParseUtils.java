@@ -43,4 +43,10 @@ public class ParseUtils {
     public static String buildNotifyRequest () {
         return "NOTIFY";
     }
+
+    public static String buildOkResponse () {
+        return "OK";
+    }
+
+    
 }
