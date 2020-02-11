@@ -27,4 +27,8 @@ public class Cache {
         System.out.println("connect req send");
         socket.send(ParseUtils.buildConnectRequest(minKey, maxKey));
     }
+
+    private static void sendNotifyRequest (ZMQ.Socket socket) {
+        socket.send(ParseUtils.buildNotifyRequest());
+    }
 }
