@@ -30,6 +30,7 @@ public class Cache {
 
             if (msg != null) {
                 String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
+                ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
                 
             }
 
