@@ -136,6 +136,8 @@ public class Proxi {
         return false;
     }
 
-    
+    private static void updateHeartbeat(String id) {
+        
+    }
 
 }
