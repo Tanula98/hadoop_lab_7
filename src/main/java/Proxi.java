@@ -90,7 +90,8 @@ public class Proxi {
             }
 
             if (id >= cacheServer.getMinKey() && id <= cacheServer.getMaxKey()) {
-                
+                cacheServer.getAddress().send(backend, ZFrame.REUSE + ZFrame.MORE);
+                msg.send(backend, false);
             }
         }
         return false;
