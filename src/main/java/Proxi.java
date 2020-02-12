@@ -18,6 +18,7 @@ public class Proxi {
 
         System.out.println("proxi started");
 
+        ZMQ.Poller items = context.poller(2);
         
     }
 }
