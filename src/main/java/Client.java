@@ -8,6 +8,8 @@ public class Client {
         ZMQ.Socket requester = context.socket(SocketType.REQ);
         requester.connect(Constants.CLIENT_ROUTER_ADDRESS);
 
+        System.out.println("client started");
+
         Scanner sc = new java.util.Scanner(System.in);
 
         while (!Thread.currentThread().isInterrupted()) {
