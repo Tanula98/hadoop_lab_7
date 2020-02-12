@@ -27,7 +27,7 @@ public class Client {
             String response = requester.recvStr();
             System.out.println(response);
         }else {
-            
+            System.out.println("invalid command");
         }
     }
 }
