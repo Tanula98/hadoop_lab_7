@@ -29,6 +29,7 @@ public class Cache {
             ZMsg msg = ZMsg.recvMsg(dealer, false);
 
             if (msg != null) {
+                String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
                 
             }
 
