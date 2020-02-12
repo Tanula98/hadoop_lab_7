@@ -59,7 +59,7 @@ public class Proxi {
                     }
                 }
             }
-            //
+            //От другого - команды NOTIFY
             if (items.pollin(1)) {
                 ZMsg msg = ZMsg.recvMsg(backend);
                 ZFrame address = msg.unwrap();
