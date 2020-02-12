@@ -25,8 +25,13 @@ public class Proxi {
         while (!Thread.currentThread().isInterrupted()) {
             items.poll(Constants.HEARTBEAT_TIMEOUT);
 
-            
+            if (items.pollin(0)) {
 
+            }
+
+            if (items.pollin(1)) {
+
+            }
         }
 
         frontend.close();
