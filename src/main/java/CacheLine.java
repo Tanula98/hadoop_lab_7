@@ -33,7 +33,7 @@ public class CacheLine {
     }
 
     public long setHertbeatTime() {
-        return hertbeatTime;
+        this.hertbeatTime = hertbeatTime;
     }
 
     public boolean isDead() {
