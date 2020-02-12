@@ -4,5 +4,7 @@ public class CacheLine {
 
     private String id;
     private ZFrame address;
+    private int minKey;
+    private int maxKey;
     
 }
