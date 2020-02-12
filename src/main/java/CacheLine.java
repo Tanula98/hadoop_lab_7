@@ -36,5 +36,7 @@ public class CacheLine {
         return hertbeatTime;
     }
 
-    
+    public boolean isDead() {
+        return System.currentTimeMillis() > hertbeatTime + 2 * Constants.HEARTBEAT_TIMEOUT;
+    }
 }
