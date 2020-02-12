@@ -55,10 +55,8 @@ public class Cache {
 
             if (System.currentTimeMillis() >= nextHearbeatTime) {
                 nextHearbeatTime = System.currentTimeMillis() + Constants.HEARTBEAT_TIMEOUT;
-                
+                sendNotifyRequest(dealer);
             }
-
-
         }
 
         dealer.close();
