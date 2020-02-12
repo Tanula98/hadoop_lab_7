@@ -60,6 +60,11 @@ public class Proxi {
         for (int i = 0; i < cacheServers.size(); i++) {
             CacheLine cacheServer = cacheServers.get(i);
 
+            if (cacheServer.isDead()) {
+                cacheServers.remove(i);
+                continue;
+            }
+
         }
 
         return false;
