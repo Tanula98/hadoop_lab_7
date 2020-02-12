@@ -56,4 +56,8 @@ public class Proxi {
     }
 
 
+    private static boolean sendGetRequest (ZMQ.Socket backend, Integer id, ZMsg msg) {
+        
+    }
+
 }
