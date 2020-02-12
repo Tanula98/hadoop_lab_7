@@ -66,6 +66,8 @@ public class Proxi {
                 ZFrame address = msg.unwrap();
                 String id = new String(address.getData(), ZMQ.CHARSET);
                 String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
+                ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
+
                 
 
             }
