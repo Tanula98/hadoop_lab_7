@@ -28,6 +28,7 @@ public class Client {
         {
             System.out.println("valid command!");
             requester.send(commandLine);
+            //получить сообщение в виде строки
             String response = requester.recvStr();
             System.out.println(response);
         }else {
