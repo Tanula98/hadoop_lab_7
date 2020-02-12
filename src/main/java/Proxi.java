@@ -68,6 +68,8 @@ public class Proxi {
                 ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
 
                 if (commandType == ParseUtils.CommandType.CONNECT) {
+                    Integer[] range = ParseUtils.getKeyValue(command);
+                    
 
                 }
 
