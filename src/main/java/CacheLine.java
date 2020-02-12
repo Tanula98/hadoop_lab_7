@@ -8,5 +8,7 @@ public class CacheLine {
     private int maxKey;
     private long hertbeatTime;
 
-    
+    public CacheLine(String id, ZFrame address, int minKey, int maxKey, long hertbeatTime) {
+        
+    }
 }
