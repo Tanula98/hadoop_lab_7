@@ -64,6 +64,7 @@ public class Proxi {
             if (items.pollin(1)) {
                 ZMsg msg = ZMsg.recvMsg(backend);
                 ZFrame address = msg.unwrap();
+                String id = new String(address.getData(), ZMQ.CHARSET);
                 
 
             }
