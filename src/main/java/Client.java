@@ -10,7 +10,13 @@ public class Client {
 
         Scanner sc = new java.util.Scanner(System.in);
 
+        while (!Thread.currentThread().isInterrupted()) {
+
+        }
+
         requester.close();
         context.close();
     }
+
+    
 }
