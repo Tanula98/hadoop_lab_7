@@ -46,6 +46,7 @@ public class Cache {
                 if (commandType == ParseUtils.CommandType.PUT) {
                     System.out.println("got PUT command!");
                     Integer[] pair = ParseUtils.getKeyValue(command);
+                    cache.put(pair[0], pair[1]);
                     
 
                 }
