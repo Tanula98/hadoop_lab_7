@@ -1,7 +1,12 @@
 import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
 
+import java.util.ArrayList;
+
 public class Proxi {
+
+    private static final ArrayList<CacheLine> cacheServers = new ArrayList<>();
+
 
     public static void main (String[] args) {
 
