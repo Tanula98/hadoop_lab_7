@@ -1,4 +1,4 @@
-public class ParseUtils {
+class ParseUtils {
 
     public enum CommandType {
         GET,
@@ -11,7 +11,7 @@ public class ParseUtils {
         OK
     }
 
-    public static CommandType getCommandType(String command){
+    static CommandType getCommandType(String command){
         if (Constants.GET_COMMAND_PATTERN.matcher(command).find()) {
             return CommandType.GET;
         }
@@ -36,30 +36,30 @@ public class ParseUtils {
         return CommandType.INVALID;
     }
 
-    public static String buildConnectRequest (Integer minKey, Integer maxKey) {
+    static String buildConnectRequest(Integer minKey, Integer maxKey) {
         return "CONNECT " + minKey + " " + maxKey;
     }
 
-    public static String buildNotifyRequest () {
+    static String buildNotifyRequest() {
         return "NOTIFY";
     }
 
-    public static String buildOkResponse () {
+    static String buildOkResponse() {
         return "OK";
     }
 
 
-    public static Integer[] getKeyValue(String putCommand) {
+    static Integer[] getKeyValue(String putCommand) {
         String[] words = putCommand.split(Constants.DELIMITER);
         return new Integer[] {Integer.parseInt(words[1]), Integer.parseInt(words[2])};
     }
 
-    public static Integer getKey (String getCommand) {
+    static Integer getKey(String getCommand) {
         String[] words = getCommand.split(Constants.DELIMITER);
         return Integer.parseInt(words[1]);
     }
 
-    public static String buildReturnValueResponse (String value) {
+    static String buildReturnValueResponse(String value) {
         return "RETURN_VALUE " + value;
     }
 }

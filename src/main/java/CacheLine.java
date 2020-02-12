@@ -1,6 +1,6 @@
 import org.zeromq.ZFrame;
 
-public class CacheLine {
+class CacheLine {
 
     private String id;
     private ZFrame address;
@@ -8,7 +8,7 @@ public class CacheLine {
     private int maxKey;
     private long hertbeatTime;
 
-    public CacheLine(String id, ZFrame address, int minKey, int maxKey, long hertbeatTime) {
+    CacheLine(String id, ZFrame address, int minKey, int maxKey, long hertbeatTime) {
         this.id = id;
         this.address = address;
         this.maxKey = maxKey;
@@ -16,27 +16,27 @@ public class CacheLine {
         this.hertbeatTime = hertbeatTime;
     }
 
-    public String getId() {
+    String getId() {
         return id;
     }
 
-    public ZFrame getAddress() {
+    ZFrame getAddress() {
         return address;
     }
 
-    public int getMinKey() {
+    int getMinKey() {
         return minKey;
     }
 
-    public int getMaxKey() {
+    int getMaxKey() {
         return maxKey;
     }
 
-    public void setHertbeatTime(long hertbeatTime) {
+    void setHertbeatTime(long hertbeatTime) {
         this.hertbeatTime = hertbeatTime;
     }
 
-    public boolean isDead() {
+    boolean isDead() {
         return System.currentTimeMillis() > hertbeatTime + 2 * Constants.HEARTBEAT_TIMEOUT;
     }
 }
