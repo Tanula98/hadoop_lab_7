@@ -35,6 +35,8 @@ public class Proxi {
                 if (commandType == ParseUtils.CommandType.GET) {
 
                 }
+
+                
                 if (commandType == ParseUtils.CommandType.PUT) {
 
                 }
