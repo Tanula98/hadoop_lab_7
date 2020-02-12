@@ -57,7 +57,6 @@ public class Proxi {
                         msg.getLast().reset("id is out of cached range");
                         msg.send(frontend);
                     }
-
                 }
             }
 
@@ -71,12 +70,15 @@ public class Proxi {
                 if (commandType == ParseUtils.CommandType.CONNECT) {
 
                 }
+
                 if (commandType == ParseUtils.CommandType.RETURN_VALUE) {
                     msg.send(frontend);
                 }
+
                 if (commandType == ParseUtils.CommandType.NOTIFY) {
 
                 }
+
                 if (commandType == ParseUtils.CommandType.OK) {
                     msg.send(frontend);
                 }
