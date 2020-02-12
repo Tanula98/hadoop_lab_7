@@ -6,5 +6,7 @@ public class CacheLine {
     private ZFrame address;
     private int minKey;
     private int maxKey;
+    private long hertbeatTime;
+
     
 }
