@@ -49,7 +49,7 @@ public class Cache {
                     cache.put(pair[0], pair[1]);
 
                     msg.getLast().reset(ParseUtils.buildOkResponse());
-                    
+                    msg.send(dealer);
 
                 }
             }
