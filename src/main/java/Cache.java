@@ -47,6 +47,8 @@ public class Cache {
                     System.out.println("got PUT command!");
                     Integer[] pair = ParseUtils.getKeyValue(command);
                     cache.put(pair[0], pair[1]);
+
+                    msg.getLast().reset(ParseUtils.buildOkResponse());
                     
 
                 }
