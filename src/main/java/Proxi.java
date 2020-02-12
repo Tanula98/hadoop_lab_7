@@ -137,9 +137,10 @@ public class Proxi {
     }
 
     private static void updateHeartbeat(String id) {
-        for (int i = 0; i < cacheServers.size(); i++) {
-            CacheLine cacheServer = cacheServers.get(i);
-            
+        for (CacheLine cacheServer : cacheServers) {
+            if (cacheServer.getId().equals(id)) {
+                cacheServer.setHertbeatTime(System.currentTimeMillis());
+            }
         }
     }
 
