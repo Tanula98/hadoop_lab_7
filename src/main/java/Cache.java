@@ -33,6 +33,7 @@ public class Cache {
                 ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
                 if (commandType == ParseUtils.CommandType.GET) {
                     System.out.println("got GET command!");
+                    Integer id = ParseUtils.getKey(command);
                 }
 
                 if (commandType == ParseUtils.CommandType.PUT) {
