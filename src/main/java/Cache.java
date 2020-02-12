@@ -32,10 +32,11 @@ public class Cache {
                 String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
                 ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
                 if (commandType == ParseUtils.CommandType.GET) {
-                    
+                    System.out.println("got GET command!");
                 }
 
                 if (commandType == ParseUtils.CommandType.PUT) {
+                    System.out.println("got GET command!");
 
                 }
             }
