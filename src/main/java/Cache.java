@@ -35,7 +35,7 @@ public class Cache {
                     System.out.println("got GET command!");
                     Integer id = ParseUtils.getKey(command);
                     Integer value = cache.get(id);
-                    String response = (value == null)
+                    String response = (value == null)  ? "null" : value.toString();
                 }
 
                 if (commandType == ParseUtils.CommandType.PUT) {
