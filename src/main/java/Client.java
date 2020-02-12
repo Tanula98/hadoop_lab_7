@@ -1,6 +1,7 @@
 import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
 
+import java.util.Scanner;
 public class Client {
     public static void main(String[] args) {
         ZMQ.Context context = ZMQ.context(1);
