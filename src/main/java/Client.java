@@ -20,8 +20,11 @@ public class Client {
 
     private static void ExecuteCommand(ZMQ.Socket requester, String commandLine) {
         if (ParseUtils.getCommandType(commandLine) == ParseUtils.CommandType.GET ||
-                ParseUtils.getCommandType(commandLine) == ParseUtils.CommandType.PUT){
-
+                ParseUtils.getCommandType(commandLine) == ParseUtils.CommandType.PUT)
+        {
+            System.out.println("valid command!");
+            requester.send(commandLine);
+            String response = requester.recvStr();
         }
     }
 }
