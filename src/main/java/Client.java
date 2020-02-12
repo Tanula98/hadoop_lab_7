@@ -11,5 +11,6 @@ public class Client {
 
     Scanner sc = new java.util.Scanner(System.in);
 
-    
+    requester.close();
+    context.close();
 }
