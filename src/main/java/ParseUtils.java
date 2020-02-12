@@ -50,7 +50,8 @@ public class ParseUtils {
 
 
     public static Integer[] getKeyValue(String putCommand) {
-        String[] words = putCommand.split(DELIMITER);
+        String[] words = putCommand.split(Constants.DELIMITER);
         return new Integer[] {Integer.parseInt(words[1]), Integer.parseInt(words[2])};
     }
+    
 }
