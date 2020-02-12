@@ -30,6 +30,8 @@ public class Proxi {
                 ZMsg msg = ZMsg.recvMsg(frontend);
                 String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
                 ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
+                boolean isIdValid;
+
                 
             }
 
