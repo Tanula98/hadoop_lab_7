@@ -20,6 +20,7 @@ public class Client {
         requester.close();
         context.close();
     }
+//Подключается к центральному прокси. Читает команды из консоли и отправляет их в прокси.
 
     private static void ExecuteCommand(ZMQ.Socket requester, String commandLine) {
         if (ParseUtils.getCommandType(commandLine) == ParseUtils.CommandType.GET ||
