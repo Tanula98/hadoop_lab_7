@@ -25,6 +25,7 @@ public class Client {
             System.out.println("valid command!");
             requester.send(commandLine);
             String response = requester.recvStr();
-        }
+            System.out.println(response);
+        }else 
     }
 }
