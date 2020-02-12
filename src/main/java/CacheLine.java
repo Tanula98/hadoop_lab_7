@@ -9,6 +9,12 @@ public class CacheLine {
     private long hertbeatTime;
 
     public CacheLine(String id, ZFrame address, int minKey, int maxKey, long hertbeatTime) {
-        
+        this.id = id;
+        this.address = address;
+        this.maxKey = maxKey;
+        this.minKey = minKey;
+        this.hertbeatTime = hertbeatTime;
     }
+
+    
 }
