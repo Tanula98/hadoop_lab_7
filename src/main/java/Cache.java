@@ -36,7 +36,7 @@ public class Cache {
                 }
 
                 if (commandType == ParseUtils.CommandType.PUT) {
-                    System.out.println("got GET command!");
+                    System.out.println("got PUT command!");
 
                 }
             }
