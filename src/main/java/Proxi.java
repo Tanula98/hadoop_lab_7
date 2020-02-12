@@ -27,7 +27,7 @@ public class Proxi {
 
         while (!Thread.currentThread().isInterrupted()) {
             items.poll(Constants.HEARTBEAT_TIMEOUT);
-
+            //От одного принимаются команды от клиентов.
             if (items.pollin(0)) {
                 ZMsg msg = ZMsg.recvMsg(frontend);
                 String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
@@ -48,7 +48,6 @@ public class Proxi {
 
                 }
 
-
                 if (commandType == ParseUtils.CommandType.PUT) {
                     System.out.println("got PUT command!");
                     Integer[] pair = ParseUtils.getKeyValue(command);
@@ -60,7 +59,7 @@ public class Proxi {
                     }
                 }
             }
-
+            //
             if (items.pollin(1)) {
                 ZMsg msg = ZMsg.recvMsg(backend);
                 ZFrame address = msg.unwrap();
