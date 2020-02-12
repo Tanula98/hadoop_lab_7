@@ -50,8 +50,10 @@ public class Proxi {
 
                 if (commandType == ParseUtils.CommandType.PUT) {
                     System.out.println("got PUT command!");
+                    Integer[] pair = ParseUtils.getKeyValue(command);
                     isIdValid = sendPutRequest(backend, pair[0], msg);
                     
+
                 }
             }
 
