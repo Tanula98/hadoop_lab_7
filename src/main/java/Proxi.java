@@ -64,6 +64,9 @@ public class Proxi {
                 cacheServers.remove(i);
                 continue;
             }
+            if (id >= cacheServer.getMinKey() && id <= cacheServer.getMaxKey()) {
+                
+            }
 
         }
 
