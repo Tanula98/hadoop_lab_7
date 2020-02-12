@@ -43,4 +43,6 @@ public class Cache {
     private static void sendNotifyRequest (ZMQ.Socket socket) {
         socket.send(ParseUtils.buildNotifyRequest());
     }
+
+    
 }
