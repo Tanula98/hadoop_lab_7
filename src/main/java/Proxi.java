@@ -40,6 +40,10 @@ public class Proxi {
 
                     isIdValid = sendGetRequest(backend, id, msg);
                     
+                    if (!isIdValid) {
+                        msg.getLast().reset("id is out of cached range");
+                        msg.send(frontend);
+                    }
 
                 }
 
