@@ -39,6 +39,7 @@ public class Cache {
 
                     System.out.println("response = " + response);
 
+                    msg.getLast().reset(ParseUtils.buildReturnValueResponse(response));
                     
                 }
 
