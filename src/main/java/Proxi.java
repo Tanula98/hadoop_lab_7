@@ -23,7 +23,13 @@ public class Proxi {
         items.register(backend, ZMQ.Poller.POLLIN);
 
         while (!Thread.currentThread().isInterrupted()) {
-            
+
         }
+
+        frontend.close();
+        backend.close();
+        context.close();
     }
+
+    
 }
