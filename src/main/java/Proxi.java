@@ -52,7 +52,11 @@ public class Proxi {
                     System.out.println("got PUT command!");
                     Integer[] pair = ParseUtils.getKeyValue(command);
                     isIdValid = sendPutRequest(backend, pair[0], msg);
-                    
+
+                    if (!isIdValid) {
+                        msg.getLast().reset("id is out of cached range");
+                        msg.send(frontend);
+                    }
 
                 }
             }
