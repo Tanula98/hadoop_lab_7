@@ -23,6 +23,7 @@ public class Proxi {
         items.register(backend, ZMQ.Poller.POLLIN);
 
         while (!Thread.currentThread().isInterrupted()) {
+            items.poll(Constants.);
 
         }
 
@@ -31,5 +32,5 @@ public class Proxi {
         context.close();
     }
 
-    
+
 }
