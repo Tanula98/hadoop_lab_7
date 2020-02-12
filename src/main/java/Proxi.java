@@ -38,6 +38,9 @@ public class Proxi {
                     Integer id = ParseUtils.getKey(command);
                     Integer[] pair = ParseUtils.getKeyValue(command);
 
+                    isIdValid = sendGetRequest(backend, id, msg);
+                    
+
                 }
 
 
