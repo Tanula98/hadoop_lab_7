@@ -28,7 +28,7 @@ public class Proxi {
 
             if (items.pollin(0)) {
                 ZMsg msg = ZMsg.recvMsg(frontend);
-                
+                String command = new String(msg.getLast().getData(), ZMQ.CHARSET);
             }
 
             if (items.pollin(1)) {
