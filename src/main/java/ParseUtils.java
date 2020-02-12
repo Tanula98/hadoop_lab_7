@@ -58,5 +58,8 @@ public class ParseUtils {
         String[] words = getCommand.split(Constants.DELIMITER);
         return Integer.parseInt(words[1]);
     }
-    
+
+    public static String buildReturnValueResponse (String value) {
+        return "RETURN_VALUE " + value;
+    }
 }
