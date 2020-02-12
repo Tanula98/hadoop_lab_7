@@ -32,7 +32,7 @@ public class CacheLine {
         return maxKey;
     }
 
-    public long getHertbeatTime() {
+    public long setHertbeatTime() {
         return hertbeatTime;
     }
 
