@@ -53,5 +53,10 @@ public class ParseUtils {
         String[] words = putCommand.split(Constants.DELIMITER);
         return new Integer[] {Integer.parseInt(words[1]), Integer.parseInt(words[2])};
     }
+
+    public static Integer getKey (String getCommand) {
+        String[] words = getCommand.split(Constants.DELIMITER);
+        return Integer.parseInt(words[1]);
+    }
     
 }
