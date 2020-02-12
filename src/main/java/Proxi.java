@@ -33,12 +33,12 @@ public class Proxi {
                 boolean isIdValid;
 
                 if (commandType == ParseUtils.CommandType.GET) {
-
+                    System.out.println("got GET command!");
                 }
 
-                
-                if (commandType == ParseUtils.CommandType.PUT) {
 
+                if (commandType == ParseUtils.CommandType.PUT) {
+                    System.out.println("got PUT command!");
                 }
             }
 
