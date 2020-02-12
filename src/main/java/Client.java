@@ -19,7 +19,7 @@ public class Client {
     }
 
     private static void ExecuteCommand(ZMQ.Socket requester, String commandLine) {
-        if (ParseUtils.getCommandType(commandLine) ==){
+        if (ParseUtils.getCommandType(commandLine) == ParseUtils.getCommandType()){
 
         }
     }
