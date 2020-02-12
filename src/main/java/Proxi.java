@@ -71,8 +71,8 @@ public class Proxi {
                 if (commandType == ParseUtils.CommandType.CONNECT) {
 
                 }
-                if (commandType == ParseUtils.CommandType.INVALID) {
-
+                if (commandType == ParseUtils.CommandType.RETURN_VALUE) {
+                    msg.send(frontend);
                 }
                 if (commandType == ParseUtils.CommandType.NOTIFY) {
 
