@@ -16,5 +16,23 @@ public class CacheLine {
         this.hertbeatTime = hertbeatTime;
     }
 
-    
+    public String getId() {
+        return id;
+    }
+
+    public ZFrame getAddress() {
+        return address;
+    }
+
+    public int getMinKey() {
+        return minKey;
+    }
+
+    public int getMaxKey() {
+        return maxKey;
+    }
+
+    public long getHertbeatTime() {
+        return hertbeatTime;
+    }
 }
