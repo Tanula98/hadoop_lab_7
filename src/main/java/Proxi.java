@@ -69,6 +69,7 @@ public class Proxi {
 
                 if (commandType == ParseUtils.CommandType.CONNECT) {
                     Integer[] range = ParseUtils.getKeyValue(command);
+                    System.out.println("new server added to cache list");
                     
 
                 }
