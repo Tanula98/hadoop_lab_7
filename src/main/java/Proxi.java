@@ -82,6 +82,7 @@ public class Proxi {
     private static boolean sendPutRequest (ZMQ.Socket backend, Integer id, ZMsg msg) {
 
         for (int i = 0; i < cacheServers.size(); i++) {
+            CacheLine cacheServer = cacheServers.get(i);
             
         }
         return false;
