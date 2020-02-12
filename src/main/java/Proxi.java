@@ -15,5 +15,9 @@ public class Proxi {
         ZMQ.Socket backend = context.socket(SocketType.ROUTER);
         frontend.bind(Constants.CLIENT_ROUTER_ADDRESS);
         backend.bind(Constants.CACHE_ROUTER_ADDRESS);
+
+        System.out.println("proxi started");
+
+        
     }
 }
