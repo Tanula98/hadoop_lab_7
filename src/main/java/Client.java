@@ -11,7 +11,7 @@ public class Client {
         Scanner sc = new java.util.Scanner(System.in);
 
         while (!Thread.currentThread().isInterrupted()) {
-
+            ExecuteCommand(requester, sc.nextLine());
         }
 
         requester.close();
