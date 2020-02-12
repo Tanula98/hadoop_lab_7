@@ -137,7 +137,9 @@ public class Proxi {
     }
 
     private static void updateHeartbeat(String id) {
-        
+        for (int i = 0; i < cacheServers.size(); i++) {
+            
+        }
     }
 
 }
