@@ -32,7 +32,12 @@ public class Proxi {
                 ParseUtils.CommandType commandType = ParseUtils.getCommandType(command);
                 boolean isIdValid;
 
-                
+                if (commandType == ParseUtils.CommandType.GET) {
+
+                }
+                if (commandType == ParseUtils.CommandType.PUT) {
+
+                }
             }
 
             if (items.pollin(1)) {
