@@ -78,7 +78,7 @@ public class Proxi {
 
                 }
                 if (commandType == ParseUtils.CommandType.OK) {
-
+                    msg.send(frontend);
                 }
             }
         }
