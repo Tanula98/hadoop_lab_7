@@ -71,7 +71,15 @@ public class Proxi {
                 if (commandType == ParseUtils.CommandType.CONNECT) {
 
                 }
+                if (commandType == ParseUtils.CommandType.INVALID) {
 
+                }
+                if (commandType == ParseUtils.CommandType.NOTIFY) {
+
+                }
+                if (commandType == ParseUtils.CommandType.OK) {
+
+                }
             }
         }
 
