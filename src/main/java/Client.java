@@ -18,5 +18,7 @@ public class Client {
         context.close();
     }
 
-    
+    private static void ExecuteCommand(ZMQ.Socket requester, String commandLine) {
+        
+    }
 }
