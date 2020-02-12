@@ -39,7 +39,7 @@ public class Proxi {
                     Integer[] pair = ParseUtils.getKeyValue(command);
 
                     isIdValid = sendGetRequest(backend, id, msg);
-                    
+
                     if (!isIdValid) {
                         msg.getLast().reset("id is out of cached range");
                         msg.send(frontend);
@@ -50,6 +50,8 @@ public class Proxi {
 
                 if (commandType == ParseUtils.CommandType.PUT) {
                     System.out.println("got PUT command!");
+                    isIdValid = sendPutRequest(backend, pair[0], msg);
+                    
                 }
             }
 
