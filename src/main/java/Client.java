@@ -26,6 +26,8 @@ public class Client {
             requester.send(commandLine);
             String response = requester.recvStr();
             System.out.println(response);
-        }else 
+        }else {
+            
+        }
     }
 }
