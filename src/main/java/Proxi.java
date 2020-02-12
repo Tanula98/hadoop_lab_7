@@ -80,7 +80,7 @@ public class Proxi {
                 }
 
                 if (commandType == ParseUtils.CommandType.NOTIFY) {
-
+                    updateHeartbeat(id);
                 }
 
                 if (commandType == ParseUtils.CommandType.OK) {
